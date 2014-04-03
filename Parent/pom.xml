@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>me.gaolei.tutorial</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>SpringTutorial :: Parent</name>
+    <packaging>pom</packaging>
+    <properties>
+        <jdk.version>1.7</jdk.version>
+        <jetty.port>8081</jetty.port>
+        <spring.version>3.1.2.RELEASE</spring.version>
+        <org.slf4j.version>1.6.4</org.slf4j.version>
+        <shiro.version>1.2.2</shiro.version>
+        <junit.version>4.11</junit.version>
+        <cobertura.version>2.6</cobertura.version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- start of Testing -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <!-- end of Testing -->
+
+
+            <!-- start of spring framework -->
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <!-- end of spring framework -->
+
+
+        </dependencies>
+    </dependencyManagement>
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                    <meminitial>128m</meminitial>
+                    <maxmem>512m</maxmem>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
