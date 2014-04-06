@@ -40,6 +40,11 @@
             </dependency>
             <!-- end of spring framework -->
 
+            <dependency>
+                <groupId>net.sf.ehcache</groupId>
+                <artifactId>ehcache</artifactId>
+                <version>2.8.1</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
