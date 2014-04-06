@@ -13,6 +13,7 @@
         <module>Parent</module>
         <module>MessageSource</module>
         <module>Ehcache</module>
+        <module>Aop</module>
     </modules>
 
 

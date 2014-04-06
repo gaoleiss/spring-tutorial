@@ -12,9 +12,8 @@
 
     <groupId>me.gaolei.tutorial</groupId>
     <artifactId>message-source</artifactId>
-    <packaging>jar</packaging>
-    <version>1.0.0-SNAPSHOT</version>
     <name>SpringTutorial :: MessageSource</name>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
