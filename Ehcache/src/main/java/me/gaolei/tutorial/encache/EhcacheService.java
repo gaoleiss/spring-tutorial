@@ -18,8 +18,7 @@ public class EhcacheService {
      */
     @Resource(name = "ehcacheManager")
     private CacheManager cacheManager;
-//    @Autowired
-//    private org.springframework.cache.CacheManager cacheManager;
+
 
     private final static String cacheName = "gaolei_me";
 
@@ -41,7 +40,7 @@ public class EhcacheService {
         Element element = new Element(key, object);
 
         // Add the element to the cache
-        cacheManager.getEhcache(cacheName).put(element);
+        getEhcache(cacheName).put(element);
     }
 
     /**
@@ -49,7 +48,7 @@ public class EhcacheService {
      */
     public Object get(String key) {
         // Retrieve the Object that contains the requested key
-        Element element = cacheManager.getEhcache(cacheName).get(key);
+        Element element = getEhcache(cacheName).get(key);
         if (element != null) {
             return element.getObjectValue();
         }
