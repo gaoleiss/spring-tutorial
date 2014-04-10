@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.gaolei</groupId>
+    <groupId>me.gaolei.tutorial</groupId>
     <artifactId>sprint-tutorial</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>SpringTutorial</name>
@@ -13,7 +13,9 @@
         <module>Parent</module>
         <module>MessageSource</module>
         <module>Ehcache</module>
+        <module>Cache</module>
         <module>Aop</module>
+        <module>InitializingDisposableBean</module>
     </modules>
 
 

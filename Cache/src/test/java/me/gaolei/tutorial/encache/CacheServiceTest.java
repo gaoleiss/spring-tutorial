@@ -15,7 +15,7 @@ public class CacheServiceTest {
 
     @BeforeClass
     public static void setUp() {
-        ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"applicationContext-2.xml"});
+        ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml"});
         cacheService = context.getBean(CacheService.class);
 
         Assert.assertNotNull(cacheService.getEhcache("gaolei_me"));
