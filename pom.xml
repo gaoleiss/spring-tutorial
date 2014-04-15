@@ -16,6 +16,7 @@
         <module>Cache</module>
         <module>Aop</module>
         <module>InitializingDisposableBean</module>
+        <module>BeanPostProcessor</module>
     </modules>
 
 
