@@ -1,0 +1,3 @@
+[submodule "Setup/codestyle"]
+	path = Setup/codestyle
+	url = git@github.com:gaoleiss/codestyle.git

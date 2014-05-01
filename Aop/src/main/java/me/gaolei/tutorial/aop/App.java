@@ -19,7 +19,7 @@ public class App {
         try {
             cust.printThrowException();
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
 
     }

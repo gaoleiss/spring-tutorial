@@ -20,7 +20,7 @@ public class EhcacheService {
     private CacheManager cacheManager;
 
 
-    private final static String cacheName = "gaolei_me";
+    private static final String cacheName = "gaolei_me";
 
 
 //    /**

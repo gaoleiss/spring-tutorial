@@ -16,7 +16,7 @@ public class CacheService {
     @Autowired
     private org.springframework.cache.CacheManager cacheManager;
 
-    private final static String cacheName = "gaolei_me";
+    private static final String cacheName = "gaolei_me";
 
 
     public org.springframework.cache.Cache getEhcache(String cacheName) {

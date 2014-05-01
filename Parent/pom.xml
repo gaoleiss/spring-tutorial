@@ -17,6 +17,7 @@
         <shiro.version>1.2.2</shiro.version>
         <junit.version>4.11</junit.version>
         <cobertura.version>2.6</cobertura.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -62,6 +63,7 @@
         </dependencies>
     </dependencyManagement>
     <build>
+
         <plugins>
 
             <plugin>
@@ -99,6 +101,15 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.11</version>
+
+                <configuration>
+                    <configLocation>/home/lei/work/git/spring-tutorial/Setup/codestyle/java/checks.xml</configLocation>
+                </configuration>
             </plugin>
         </plugins>
     </build>
