@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.gaolei.tutorial</groupId>
-    <artifactId>sprint-tutorial</artifactId>
+    <artifactId>spring-tutorial</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>SpringTutorial</name>
     <packaging>pom</packaging>
@@ -17,6 +17,7 @@
         <module>Aop</module>
         <module>InitializingDisposableBean</module>
         <module>BeanPostProcessor</module>
+        <module>Shiro</module>
     </modules>
 
 
