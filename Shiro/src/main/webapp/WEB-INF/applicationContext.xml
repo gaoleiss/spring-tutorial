@@ -6,7 +6,7 @@
                 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
        default-lazy-init="true">
 
-    <context:component-scan base-package="com.weardex">
+    <context:component-scan base-package="me.gaolei">
     </context:component-scan>
 
 
