@@ -45,6 +45,10 @@
         <powermock.version>1.5.4</powermock.version>
         <ehcache.version>2.8.1</ehcache.version>
         <cglib.version>2.2.2</cglib.version>
+        <spring-data-jpa.version>1.3.2.RELEASE</spring-data-jpa.version>
+        <mysql-connector-java.version>5.1.6</mysql-connector-java.version>
+        <hibernate.version>4.1.0.Final</hibernate.version>
+        <tomcat-jdbc.version>7.0.50</tomcat-jdbc.version>
     </properties>
     <dependencies>
         <!-- start of Testing -->
@@ -218,8 +222,18 @@
                 <artifactId>spring-orm</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-jpa</artifactId>
+                <version>${spring-data-jpa.version}</version>
+            </dependency>
             <!-- end of spring framework -->
-            <!-- Servlet -->
+            <!-- start of servlet -->
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>servlet-api</artifactId>
@@ -238,6 +252,7 @@
                 <version>${jstl.version}</version>
                 <scope>provided</scope>
             </dependency>
+            <!-- end of servlet start-->
             <!--Apache Shiro start-->
             <dependency>
                 <groupId>org.apache.shiro</groupId>
@@ -255,6 +270,32 @@
                 <version>${shiro.version}</version>
             </dependency>
             <!-- DataFeed Processing End -->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>${hibernate.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-entitymanager</artifactId>
+                <version>${hibernate.version}</version>
+            </dependency>
+            <!-- connection pool -->
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-jdbc</artifactId>
+                <version>${tomcat-jdbc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>

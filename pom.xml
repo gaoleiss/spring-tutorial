@@ -18,6 +18,7 @@
         <module>InitializingDisposableBean</module>
         <module>BeanPostProcessor</module>
         <module>Shiro</module>
+        <module>Jpa</module>
     </modules>
 
 
