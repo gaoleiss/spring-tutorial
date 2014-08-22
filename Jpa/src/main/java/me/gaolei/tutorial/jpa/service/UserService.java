@@ -44,7 +44,7 @@ public class UserService {
         user.setUserName(userName);
         user.setPassword(password);
         Role one = roleDao.findOne(roleId);
-        List<Role> roles = new ArrayList<>();
+        List<Role> roles = new ArrayList<Role>();
         roles.add(one);
         user.setRoles(roles);
         userDao.save(user);
