@@ -13,9 +13,9 @@ public class UserServiceTest {
 
     @Before
     public void setUp() {
-        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml"});
-        userService = context.getBean(UserService.class);
-        roleDao = context.getBean(RoleDao.class);
+//        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml"});
+//        userService = context.getBean(UserService.class);
+//        roleDao = context.getBean(RoleDao.class);
 
     }
 
@@ -30,8 +30,8 @@ public class UserServiceTest {
     @Test
     public void testUser() throws Exception {
 
-        userService.addUser("guest", "guest", roleId);
-        System.out.println(userService.getAllUser());
+//        userService.addUser("guest", "guest", roleId);
+//        System.out.println(userService.getAllUser());
 
     }
 
