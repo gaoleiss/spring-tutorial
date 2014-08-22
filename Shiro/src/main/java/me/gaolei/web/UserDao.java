@@ -12,7 +12,7 @@ import java.util.Map;
  */
 @Service
 public class UserDao {
-    private Map<String, UserPrincipal> users = new HashMap<>();
+    private Map<String, UserPrincipal> users = new HashMap<String, UserPrincipal>();
 
     public UserDao() {
         users.put("gao", new UserPrincipal(1L, "gao", DigestUtils.sha1Hex("i1")));
