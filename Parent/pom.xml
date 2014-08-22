@@ -11,7 +11,7 @@
     <packaging>pom</packaging>
     <properties>
         <!--JDK and plugins version-->
-        <jdk.version>1.7</jdk.version>
+        <jdk.version>1.6</jdk.version>
         <jetty.version>7.6.14.v20131031</jetty.version>
         <jetty.port>8081</jetty.port>
         <!--commons jars version-->
